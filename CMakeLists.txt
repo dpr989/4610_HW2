@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 # Project Name
-PROJECT(gasket)
+PROJECT(HW2a)
 
 #########################################################
 # FIND GLUT
@@ -32,8 +32,8 @@ endif(NOT OPENGL_FOUND)
 # Include Files
 #########################################################
 add_executable(${PROJECT_NAME} src/${PROJECT_NAME}.cpp)
-add_executable(${PROJECT_NAME}2 src/${PROJECT_NAME}2.cpp)
-add_executable(${PROJECT_NAME}3 src/${PROJECT_NAME}3.cpp)
+#add_executable(${PROJECT_NAME}2 src/${PROJECT_NAME}2.cpp)
+#add_executable(${PROJECT_NAME}3 src/${PROJECT_NAME}3.cpp)
 
 ########################################################
 # Linking & stuff
@@ -41,5 +41,8 @@ add_executable(${PROJECT_NAME}3 src/${PROJECT_NAME}3.cpp)
 
   # create the program "test"
   target_link_libraries(${PROJECT_NAME} ${OPENGL_LIBRARIES} ${GLUT_LIBRARY})
-  target_link_libraries(${PROJECT_NAME}2 ${OPENGL_LIBRARIES} ${GLUT_LIBRARY})
-  target_link_libraries(${PROJECT_NAME}3 ${OPENGL_LIBRARIES} ${GLUT_LIBRARY})
+  #target_link_libraries(${PROJECT_NAME}2 ${OPENGL_LIBRARIES} ${GLUT_LIBRARY})
+  #target_link_libraries(${PROJECT_NAME}3 ${OPENGL_LIBRARIES} ${GLUT_LIBRARY})
+
+
+ # target_compile_features(${PROJECT_NAME} PRIVATE cxx_range_for)
